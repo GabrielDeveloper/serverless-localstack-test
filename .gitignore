@@ -1,0 +1,9 @@
+.aws*
+src/.serverless
+src/node_modules
+src/package-lock.json
+.serverless/*
+node_modules/*
+src/tests/exec/*
+.idea
+#src/test/**
