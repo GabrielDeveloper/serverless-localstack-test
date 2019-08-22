@@ -1,0 +1,21 @@
+service: aws-nodejs
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+plugins:
+  - serverless-localstack
+
+custom:
+  localstack:
+    host: http://localhost
+    endpointFile: localstack_endpoints.json
+  stage: ${opt:stage, "dev"}
+  env: ${file(./env.yml):${self:custom.stage}}
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - sns: ${self:custom.env.:SNS_ARN}
