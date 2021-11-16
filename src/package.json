@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "async": "^2.6.1",
-    "aws-sdk": "^2.399.0",
+    "aws-sdk": "^2.814.0",
     "event-stream": "^4.0.1",
     "uid": "0.0.2",
     "unzip": "^0.1.11",
