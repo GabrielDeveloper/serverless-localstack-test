@@ -10,7 +10,7 @@
   "author": "Madhouse",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "aws-sdk": "^2.399.0",
     "event-stream": "^4.0.1",
     "uid": "0.0.2",
